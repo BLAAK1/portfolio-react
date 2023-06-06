@@ -6,33 +6,36 @@ import linkedinIcon from "../../assets/icons/linkedin.svg";
 import githubIcon from "../../assets/icons/github.svg";
 import menuIcon from "../../assets/icons/menu.svg";
 
-
-
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="navbar">
-      <div className="navbar__left">
-        <span className="homeBtn">
-          <Link to="/"><img src={homeBtnIcon} alt="Home button" /></Link>
-        </span>
-        <div className="navList">
-          <ul>
-            <li className="experienceBtn">
-              <h2>DOŚWIADCZENIE</h2>
-            </li>
-            <li className="projectsBtn">
-              <h2>PROJEKTY</h2>
-            </li>
-            <li className="contactBtn">
-              <h2>KONTAKT</h2>
-            </li>
-          </ul>
-    </div>
-      </div>
-      <div className="socialList__right">
-      <div className="socialList">
+    <>
+      <div className="navbar">
+        <div className="navbar__left">
+          <span className="homeBtn">
+            <Link to="/">
+              <img src={homeBtnIcon} alt="Home button" />
+            </Link>
+          </span>
+          <div className="navList">
+            <ul>
+              <li className="experienceBtn">
+                <Link to="experience">
+                  <h2>DOŚWIADCZENIE</h2>
+                </Link>
+              </li>
+              <li className="projectsBtn">
+                <h2>PROJEKTY</h2>
+              </li>
+              <li className="contactBtn">
+                <h2>KONTAKT</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="socialList__right">
+          <div className="socialList">
             <ul>
               <li>
                 <a href="https://www.facebook.com/oskar.zegar.71/">
@@ -46,7 +49,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a href="https://github.com/BLAAK1">
-                 <img src={githubIcon} alt="GitHub" />
+                  <img src={githubIcon} alt="GitHub" />
                 </a>
               </li>
             </ul>
@@ -54,7 +57,8 @@ export default function Navbar() {
           <span className="menuBtn">
             <img src={menuIcon} alt="Menu" />
           </span>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -1,10 +1,12 @@
 .app {
   padding: 20px 0;
   margin: 0px 10px;
-  width: clamp(880px, 100%, 1300px);
+  width: 90vw;
+  max-width: 1500px;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 610px) {
   .App {
-    width: 90vw;
+    width: 100%;
   }
 }

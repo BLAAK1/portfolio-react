@@ -1,25 +1,26 @@
 .mainContent--left {
-    display: flex;
-    background: #1c1e27;
-    padding: 5px 15px 5px 15px;
-    margin-top: 20px;
-    border-radius: 8px;
-    height: fit-content;
-    width: fit-content;
+  display: flex;
+  background: #1c1e27;
+  padding: 5px 15px 5px 15px;
+
+  border-radius: 8px;
+  height: fit-content;
+  width: fit-content;
 }
 .mainContent--left img {
-    width: 242px;
-    height: 208px;
+  width: 242px;
+  height: 208px;
 }
 .mainContent--left li {
-    position: relative;
-    margin-bottom: 0;
-    padding-bottom: 0.2rem;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0.2rem;
 }
-@media screen and (max-width: 610px) {
-    .mainContent--left {
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
+@media screen and (max-width: 667px) {
+  .mainContent--left {
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    justify-content: center;
+    align-items: center;
+  }
 }
