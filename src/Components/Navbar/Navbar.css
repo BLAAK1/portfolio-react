@@ -1,0 +1,97 @@
+.navbar {
+  background: #1c1e27;
+  width: 100%;
+  height: 75px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.navbar__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+.navbar .homeBtn {
+  background: #795eb9;
+  height: 100%;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar .homeBtn:hover {
+  background: #8e6eda;
+}
+.navbar img {
+  height: 30px;
+}
+.navbar ul {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  list-style: none;
+  color: white;
+  font-size: 0.625em;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.navbar li h2:hover {
+  color: #795eb9;
+}
+svg:hover .svgFill {
+  fill: #795eb9;
+}
+.socialList__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 15px;
+}
+.socialList {
+  margin-right: 15px;
+}
+.socialList--right .menuBtn svg {
+  cursor: pointer;
+}
+
+.hiddenMenu {
+  margin-top: 5px;
+  position: absolute;
+  width: 90vw;
+  color: white;
+}
+.hiddenMenu ul {
+  list-style: none;
+  border-radius: 8px;
+  background: #1c1e27;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+@media screen and (max-width: 610px) {
+  .navbar {
+    height: 60px;
+  }
+  .navbar .homeBtn {
+    width: 60px;
+  }
+  .navList {
+    display: none;
+  }
+  .menuBtn {
+    display: block;
+  }
+}
+@media screen and (min-width: 611px) {
+  .menuBtn {
+    display: none;
+  }
+}
