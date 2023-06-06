@@ -12,14 +12,13 @@ import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 
 export default function Navbar() {
   return (
+    <Router>
     <div className="navbar">
       <div className="navbar__left">
-      <Router>
         <span className="homeBtn">
           <Link to="/"><img src={homeBtnIcon} alt="Home button" /></Link>
         </span>
         <Route path="/" exact component={HomePage} />
-      </Router>
         <div className="navList">
           <ul>
             <li className="experienceBtn">
@@ -59,5 +58,6 @@ export default function Navbar() {
           </span>
       </div>
     </div>
+    </Router>
   );
 }
