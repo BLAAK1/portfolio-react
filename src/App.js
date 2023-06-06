@@ -1,14 +1,16 @@
-import Navbar from "./Components/Navbar/Navbar";
-import AboutMe from "./Components/AboutMe/AboutMe";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./Components/HomePage/HomePage";
+
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <AboutMe />
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>  
   );
 }
 

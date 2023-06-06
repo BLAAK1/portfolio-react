@@ -6,19 +6,17 @@ import linkedinIcon from "../../assets/icons/linkedin.svg";
 import githubIcon from "../../assets/icons/github.svg";
 import menuIcon from "../../assets/icons/menu.svg";
 
-import HomePage from "../HomePage/HomePage";
 
-import { Link, Route, BrowserRouter as Router } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <Router>
     <div className="navbar">
       <div className="navbar__left">
         <span className="homeBtn">
           <Link to="/"><img src={homeBtnIcon} alt="Home button" /></Link>
         </span>
-        <Route path="/" exact component={HomePage} />
         <div className="navList">
           <ul>
             <li className="experienceBtn">
@@ -58,6 +56,5 @@ export default function Navbar() {
           </span>
       </div>
     </div>
-    </Router>
   );
 }

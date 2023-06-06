@@ -1,3 +1,11 @@
+import Navbar from "../Navbar/Navbar";
+import AboutMe from "../AboutMe/AboutMe";
+
 export default function HomePage(){
-    return <h1>Test</h1>
+    return (
+    <div className="app">
+        <Navbar />
+        <AboutMe />
+    </div>
+    )
 }
