@@ -35,17 +35,17 @@ export default function Navbar() {
       <div className="socialList">
             <ul>
               <li>
-                <a href="https://www.facebook.com/oskar.zegar.71/" target="_blank">
+                <a href="https://www.facebook.com/oskar.zegar.71/">
                   <img src={facebookIcon} alt="Facebook" />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/oskar-zegar-745362239/" target="_blank">
+                <a href="https://www.linkedin.com/in/oskar-zegar-745362239/">
                   <img src={linkedinIcon} alt="LinkedIn" />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/BLAAK1" target="_blank">
+                <a href="https://github.com/BLAAK1">
                  <img src={githubIcon} alt="GitHub" />
                 </a>
               </li>
