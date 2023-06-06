@@ -4,6 +4,7 @@
     width: clamp(880px, 100%, 1300px);
     margin: 0px 10px 0px 10px;
     padding-bottom: 20px;
+    width: 80vw;
 }
 @media screen and (max-width: 610px) {
     .App {
