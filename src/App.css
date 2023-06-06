@@ -1,13 +1,10 @@
 .app {
-    z-index: 1;
-    padding-top: 20px;
-    width: clamp(880px, 100%, 1300px);
-    margin: 0px 10px 0px 10px;
-    padding-bottom: 20px;
-    width: 80vw;
+  padding: 20px 0;
+  margin: 0px 10px;
+  width: clamp(880px, 100%, 1300px);
 }
 @media screen and (max-width: 610px) {
-    .App {
-      width: 90vw;
-    }
+  .App {
+    width: 90vw;
+  }
 }
