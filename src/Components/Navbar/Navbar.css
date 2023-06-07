@@ -62,20 +62,6 @@ svg:hover .svgFill {
 .socialList--right .menuBtn svg {
   cursor: pointer;
 }
-
-.hiddenMenu {
-  margin-top: 5px;
-  position: absolute;
-  width: 90vw;
-  color: white;
-}
-.hiddenMenu ul {
-  list-style: none;
-  border-radius: 8px;
-  background: #1c1e27;
-  padding: 10px 10px 10px 10px;
-  text-align: center;
-}
 @media screen and (max-width: 667px) {
   .navbar {
     height: 60px;
