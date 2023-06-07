@@ -4,11 +4,11 @@ import homeBtnIcon from "../../assets/icons/home.svg";
 import facebookIcon from "../../assets/icons/facebook.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import githubIcon from "../../assets/icons/github.svg";
-import menuIcon from "../../assets/icons/menu.svg";
+
 
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({children}) {
   return (
     <>
       <div className="navbar">
@@ -59,10 +59,11 @@ export default function Navbar() {
             </ul>
           </div>
           <span className="menuBtn">
-            <img src={menuIcon} alt="Menu" />
+            {children}
           </span>
         </div>
       </div>
+      
     </>
   );
 }
