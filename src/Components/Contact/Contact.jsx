@@ -1,11 +1,11 @@
+import "./Contact.css";
 import facebookIcon from "../../assets/icons/facebook.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import githubIcon from "../../assets/icons/github.svg";
 import telegramIcon from "../../assets/icons/telegram.svg";
 import emailIcon from "../../assets/icons/email.svg";
 
-
-export default function Contact() {
+function Contact() {
   return (
       <div className="contact">
               <div className="telegram contact--card">
@@ -18,7 +18,7 @@ export default function Contact() {
               </div>
               <div className="e-mail contact--card">
                 <div className="icon">
-                  <img src="../content/icons/email.svg" alt="Email" />
+                  <img src={emailIcon} alt="Email" />
                 </div>
                 <div className="info">
                   <a>zegaroskar@outlook.com</a>
@@ -26,7 +26,7 @@ export default function Contact() {
               </div>
               <div className="linkedin contact--card">
                 <div className="icon">
-                  <img src="../content/icons/linkedin.svg" alt="LinkedIn" />
+                  <img src={linkedinIcon} alt="LinkedIn" />
                 </div>
                 <div className="info">
                   <a href="https://www.linkedin.com/in/oskar-zegar-745362239/">Profil LinkedIn</a>
@@ -34,7 +34,7 @@ export default function Contact() {
               </div>
               <div className="facebook contact--card">
                 <div className="icon">
-                  <img src="../content/icons/facebook.svg" alt="Facebook" />
+                  <img src={facebookIcon} alt="Facebook" />
                 </div>
                 <div className="info">
                   <a href="https://www.facebook.com/oskar.zegar.71/">Profil Facebook</a>
@@ -42,7 +42,7 @@ export default function Contact() {
               </div>
               <div className="github contact--card">
                 <div className="icon">
-                  <img src="../content/icons/github.svg" alt="Github" />
+                  <img src={githubIcon} alt="Github" />
                 </div>
                 <div className="info">
                   <a href="https://github.com/BLAAK1">Profil GitHub</a>
@@ -51,3 +51,4 @@ export default function Contact() {
             </div>
   );
 }
+export default Contact;
