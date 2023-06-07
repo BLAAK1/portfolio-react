@@ -26,7 +26,9 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="projectsBtn">
-                <h2>PROJEKTY</h2>
+                <Link to="projects">
+                  <h2>PROJEKTY</h2>
+                </Link>
               </li>
               <li className="contactBtn">
                 <Link to="contact">
