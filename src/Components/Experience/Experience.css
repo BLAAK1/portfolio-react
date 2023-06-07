@@ -1,0 +1,51 @@
+.exp-child {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  background: #191a21;
+  border-radius: 8px;
+  padding: 5px;
+}
+.exp-title h2 {
+  width: fit-content;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #795eb9;
+}
+.exp-child .when {
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+.exp-child .work {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.exp-child .work > * {
+  margin: 0;
+  padding: 5px;
+}
+.certificates {
+  padding-bottom: 10px;
+}
+.cert {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #191a21;
+  width: 90%;
+  /* margin-bottom: 10px; */
+  border-radius: 8px;
+}
+.cert-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5px;
+}
+.cert-child > h3,
+p {
+  margin: 10px;
+}

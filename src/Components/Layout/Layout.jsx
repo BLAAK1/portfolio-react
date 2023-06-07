@@ -11,7 +11,9 @@ export default function Layout() {
       <div className="mainContent">
         <Aboutme />
         <div className="mainContent__right">
-          <Outlet />
+          <div className="mainContent__content">
+            <Outlet />
+          </div>
           <Footer />
         </div>
       </div>

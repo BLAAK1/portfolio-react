@@ -1,5 +1,51 @@
+.mainContent {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+.mainContent__content {
+  background: #1c1e27;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.mainContent__right {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 100%;
+  gap: 20px;
+}
+.card {
+  width: 45%;
+}
+.aboutMe {
+  width: 80%;
+}
+.card h3 {
+  font-size: 1rem;
+  border-bottom: 2px solid #795eb9;
+  width: fit-content;
+  padding: 0px 5px 5px 5px;
+}
+.card p {
+  font-size: 1rem;
+}
+.expierence {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (max-width: 667px) {
   .mainContent {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 979px) {
+  .mainContent--right {
+    box-sizing: border-box;
+    padding: 10px 15px;
+  }
+  .card {
+    width: 100%;
   }
 }

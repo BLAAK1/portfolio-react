@@ -29,7 +29,9 @@ export default function Navbar() {
                 <h2>PROJEKTY</h2>
               </li>
               <li className="contactBtn">
-                <h2>KONTAKT</h2>
+                <Link to="contact">
+                  <h2>KONTAKT</h2>
+                </Link>
               </li>
             </ul>
           </div>

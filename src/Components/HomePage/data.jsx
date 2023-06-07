@@ -2,7 +2,7 @@ import enFlag from "../../assets/flags/en.png";
 import plFlag from "../../assets/flags/pl.png";
 import ruFlag from "../../assets/flags/ru.png";
 
-export const dataTech = [
+const dataTech = [
   {
     name: "JavaScript",
     knowledge: "Dobrze",
@@ -29,7 +29,7 @@ export const dataTech = [
     progressBar: 20,
   },
 ];
-export const dataPrograms = [
+const dataPrograms = [
   {
     name: "Windows",
     knowledge: "Zaawansowane",
@@ -57,7 +57,7 @@ export const dataPrograms = [
     progressBar: 15,
   },
 ];
-export const dataLangs = [
+const dataLangs = [
   {
     classname: "emglish",
     name: "Angielski",
@@ -77,68 +77,59 @@ export const dataLangs = [
     img: ruFlag,
   },
 ];
-export const dataJobs = [
-  {
-    from: "09.2022",
-    to: "04.2023",
-    name: "Pomoc obsługi klienta",
-    employer: "Jarosław Truchan-Szostek",
-    city: "Paszczyna",
-    description: "Pomoc obsługi klienta na stacji Orlen MOP Paszczyna Północ",
-  },
-  {
-    from: "05.2020",
-    to: "06.2020",
-    name: "Praktykant",
-    employer: `PPHU "Fenix " Kasperek Ryszard`,
-    city: "Brzeźnica",
-    description: "-Montaż i eksploatacja sieci komputerowej<br>-Serwisowanie komputerów",
-  },
-  {
-    from: "10.2019",
-    to: "11.2019",
-    name: "Praktykant",
-    employer: `PPHU "Fenix " Kasperek Ryszard`,
-    city: "Brzeźnica",
-    description:
-      "Najważniejsze zadania:<br> -składanie komputerów<br> -diagnostyka uszkodzeń komputerów i laptopów<br> -wymiana podzespołów<br> -instalowanie oprogramowania<br> -pomoc w wyborze odpowiednich komponentów",
-  },
-];
-export const dataEdu = [
-  {
-    from: "10.2022",
-    to: "Obecnie",
-    subject: "Informatyka",
-    type: "Studia inżynierskie",
-    name: "Wyższa Szkoła Informatyki i Zarządzania",
-    city: "Rzeszów",
-  },
-  {
-    from: "09.2018",
-    to: "04.2022",
-    subject: "Technik-informatyk",
-    type: "Szkoła średnia",
-    name: "Technikum nr. 2",
-    city: "Ropczyce",
-  },
-  {
-    type: "Certyfikat",
-    when: "Maj 2020",
-    title: "NDG Linux Essentials",
-    from: "Cisco",
-  },
-  {
-    type: "Kwalifikacja",
-    when: "Wrzesień 2021",
-    title: "EE.08",
-    from: "OKE",
-    description: "Montaż i eskploatacja systemów komputerowych, urządzeń peryferyjnych i sieci",
-  },
-  {
-    type: "Kwalifikacja",
-    when: "Marzec 2022",
-    title: "EE.09",
-    from: "OKE",
-    description: "Programowanie, tworzenie i administrowanie stronami internetowymi i bazami danych",
-  },
-];
+
+const outputTech = dataTech.map((el) => {
+  return (
+    <li key={el.name}>
+      <div className="name">
+        <div className="techName">
+          <h4>{el.name}</h4>
+        </div>
+        <div className="knowledge">
+          <p>{el.knowledge}</p>
+        </div>
+      </div>
+      <div className="progressBar">
+        <div
+          className="progressBar--inner"
+          style={{ width: el.progressBar + "%" }}
+        ></div>
+      </div>
+    </li>
+  );
+});
+const outputProg = dataPrograms.map((el) => {
+  return (
+    <li key={el.name}>
+      <div className="name">
+        <div className="techName">
+          <h4>{el.name}</h4>
+        </div>
+        <div className="knowledge">
+          <p>{el.knowledge}</p>
+        </div>
+      </div>
+      <div className="progressBar">
+        <div
+          className="progressBar--inner"
+          style={{ width: el.progressBar + "%" }}
+        ></div>
+      </div>
+    </li>
+  );
+});
+const outputLang = dataLangs.map((el) => {
+  return (
+    <div className={"lang " + el.classname} key={"lang " + el.classname}>
+      <div className="lang-img">
+        <img src={el.img} alt={el.classname + "flag"} />
+      </div>
+      <div className="lang-name">
+        <h3>{el.name}</h3>
+        <p>{el.knowledge}</p>
+      </div>
+    </div>
+  );
+});
+
+export { outputTech, outputProg, outputLang };
