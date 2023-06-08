@@ -1,6 +1,6 @@
-import enFlag from "../../assets/flags/en.png";
-import plFlag from "../../assets/flags/pl.png";
-import ruFlag from "../../assets/flags/ru.png";
+import enFlag from "../assets/flags/en.png";
+import plFlag from "../assets/flags/pl.png";
+import ruFlag from "../assets/flags/ru.png";
 
 const dataTech = [
   {
@@ -17,6 +17,11 @@ const dataTech = [
     name: "CSS",
     knowledge: "Bardzo dobrze",
     progressBar: 70,
+  },
+  {
+    name: "React.js",
+    knowledge: "Podstawy",
+    progressBar: 30,
   },
   {
     name: "PHP",
@@ -56,6 +61,11 @@ const dataPrograms = [
     knowledge: "Podstawy",
     progressBar: 15,
   },
+  {
+    name: "Blender",
+    knowledge: "Podstawy",
+    progressBar: 10,
+  },
 ];
 const dataLangs = [
   {
@@ -90,10 +100,7 @@ const outputTech = dataTech.map((el) => {
         </div>
       </div>
       <div className="progressBar">
-        <div
-          className="progressBar--inner"
-          style={{ width: el.progressBar + "%" }}
-        ></div>
+        <div className="progressBar--inner" style={{ width: el.progressBar + "%" }}></div>
       </div>
     </li>
   );
@@ -110,10 +117,7 @@ const outputProg = dataPrograms.map((el) => {
         </div>
       </div>
       <div className="progressBar">
-        <div
-          className="progressBar--inner"
-          style={{ width: el.progressBar + "%" }}
-        ></div>
+        <div className="progressBar--inner" style={{ width: el.progressBar + "%" }}></div>
       </div>
     </li>
   );

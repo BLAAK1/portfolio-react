@@ -4,7 +4,7 @@ export default function Footer() {
     <div className="footer">
       <div className="execution">
         <p>
-          Projekt i realizacja -<a href="https://blaak1.github.io/">Oskar Zegar</a>
+          Projekt i realizacja -<a href="https://portfolio-oskar.vercel.app/">Oskar Zegar</a>
         </p>
       </div>
     </div>

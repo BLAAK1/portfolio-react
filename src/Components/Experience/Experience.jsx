@@ -1,5 +1,5 @@
 import "./Experience.css";
-import { outputJobs, outputEdu, outputCert } from "./data";
+import { outputJobs, outputEdu, outputCert } from "../../Data/dataExp";
 
 export default function Experience() {
   return (
