@@ -6,6 +6,7 @@ body {
   justify-content: center;
   font-family: Lato;
   color: white;
+  animation: enterence 0.4s ease 0s 1 normal forwards;
 }
 a {
   text-decoration: none;
@@ -13,4 +14,13 @@ a {
 }
 a:hover {
   color: #795eb9;
+}
+@keyframes enterence {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
