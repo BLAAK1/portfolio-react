@@ -40,6 +40,13 @@
   outline: none;
   border: none;
 }
+.p-sidebar-header {
+  margin-bottom: -1rem;
+}
+.p-sidebar-header svg {
+  width: 30px;
+  height: 30px;
+}
 .p-sidebar-mask {
   background: #795eb9;
   position: absolute;
