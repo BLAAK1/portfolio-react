@@ -35,42 +35,27 @@
   display: flex;
   flex-direction: column;
 }
-.p-button {
-  background: transparent;
+#menu {
+  background: none;
   outline: none;
   border: none;
 }
-.p-sidebar-header {
-  margin-bottom: -1rem;
-}
-.p-sidebar-header svg {
-  width: 30px;
-  height: 30px;
-}
-.p-sidebar-mask {
-  background: #795eb9;
+.sidebar {
+  z-index: 2;
   position: absolute;
-  width: 100%;
+  background: #272a36;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  right: 0;
+  top: 0;
+  animation: slideIn 0.6s ease 0s 1 normal forwards;
 }
-.p-sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30vw;
-  text-align: center;
-}
-.p-sidebar button {
-  height: 5em;
-  width: 5em;
-  outline: none;
-  border: none;
-  border-radius: 25%;
-  background: #795eb9;
+@keyframes slideIn {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .hiddenMenu {
   margin-top: 5px;
@@ -80,12 +65,18 @@
 .hiddenMenu ul {
   list-style: none;
   border-radius: 8px;
-  background: #1c1e27;
   padding: 10em 5em;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 2em;
+}
+.hiddenMenu ul button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 667px) {
