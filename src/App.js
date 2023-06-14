@@ -6,6 +6,7 @@ import Contact from "./Components/Contact/Contact";
 import Projects from "./Components/Projects/Projects";
 import Calculator from "./Components/Projects/Calculator/Calculator";
 import PasswordGenerator from "./Components/Projects/PasswordGenerator/PasswordGenerator";
+import WeatherApp from "./Components/Projects/WeatherApp/WeatherApp";
 import "./App.css";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             path="/projects/password-generator"
             element={<PasswordGenerator />}
           />
+          <Route path="/projects/weather-app" element={<WeatherApp />} />
         </Route>
       </Routes>
     </BrowserRouter>

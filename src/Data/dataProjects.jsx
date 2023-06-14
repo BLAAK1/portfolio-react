@@ -12,6 +12,10 @@ const dataProjects = [
     name: "Stare portfolio",
     url: "https://blaak1.github.io/",
   },
+  {
+    name: "Aplikacja pogodowa",
+    url: "weather-app",
+  },
 ];
 
 export const outputProjects = dataProjects.map((el) => {
