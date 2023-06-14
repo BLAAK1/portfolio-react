@@ -5,6 +5,7 @@ import Experience from "./Components/Experience/Experience";
 import Contact from "./Components/Contact/Contact";
 import Projects from "./Components/Projects/Projects";
 import Calculator from "./Components/Projects/Calculator/Calculator";
+import PasswordGenerator from "./Components/Projects/PasswordGenerator/PasswordGenerator";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="Projects" element={<Projects />} />
           <Route path="/projects/calculator" element={<Calculator />} />
+          <Route
+            path="/projects/password-generator"
+            element={<PasswordGenerator />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

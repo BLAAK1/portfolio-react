@@ -6,7 +6,7 @@ const dataProjects = [
   },
   {
     name: "Generator haseł",
-    url: "https://www.youtube.com/",
+    url: "password-generator",
   },
   {
     name: "Stare portfolio",
