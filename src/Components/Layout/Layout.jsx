@@ -13,14 +13,14 @@ export default function Layout() {
   return (
     <div className="app">
       <div className="sidebar" style={{ display: visible }}>
-        <div class="hiddenMenu hidden">
-          <div class="hiddenMenuList">
+        <div className="hiddenMenu hidden">
+          <div className="hiddenMenuList">
             <ul>
               <li>
                 <button onClick={() => setVisible("none")}>&#10006;</button>
               </li>
               <li
-                class="hiddenExperience hiddenEl"
+                className="hiddenExperience hiddenEl"
                 onClick={() => setVisible("none")}
               >
                 <Link to="experience">
@@ -28,7 +28,7 @@ export default function Layout() {
                 </Link>
               </li>
               <li
-                class="hiddenProjects hiddenEl"
+                className="hiddenProjects hiddenEl"
                 onClick={() => setVisible("none")}
               >
                 <Link to="projects">
@@ -36,7 +36,7 @@ export default function Layout() {
                 </Link>
               </li>
               <li
-                class="hiddenContact hiddenEl"
+                className="hiddenContact hiddenEl"
                 onClick={() => setVisible("none")}
               >
                 <Link to="contact">

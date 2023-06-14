@@ -1,13 +1,31 @@
 .mainContent--left {
   display: flex;
-  background: #1c1e27;
-  padding: 5px 15px 5px 15px;
+  flex-direction: column;
   border-radius: 8px;
-  height: fit-content;
-  width: fit-content;
+  width: 100%;
+  gap: 20px;
+}
+.content {
+  width: 100%;
+  background: #1c1e27;
+  padding: 10px 0px;
+  border-radius: 8px;
+}
+.content p {
+  text-align: center;
+}
+.myImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .content h2 {
   text-align: center;
+}
+.content .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mainContent--left img {
   width: 242px;
