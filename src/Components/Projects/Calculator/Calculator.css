@@ -1,0 +1,35 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  background: #191a21;
+  padding: 5px;
+  border-radius: 8px;
+  max-width: 510px;
+  max-height: 710px;
+  margin: 0 auto;
+}
+.output {
+  margin: 5px;
+}
+.result {
+  width: 100%;
+  height: 4rem;
+  font-size: 3rem;
+  overflow-x: auto;
+  text-align: right;
+  background: #656986;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+}
+.button {
+  width: calc(100% / 4 - 10px);
+  margin: 5px;
+  aspect-ratio: 1/1;
+  background: #656986;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}

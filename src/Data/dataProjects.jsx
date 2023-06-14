@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 const dataProjects = [
   {
     name: "Prosty kalkulator",
-    url: "https://www.google.com/",
+    url: "calculator",
   },
   {
     name: "Generator haseł",
@@ -15,12 +16,10 @@ const dataProjects = [
 
 export const outputProjects = dataProjects.map((el) => {
   return (
-    <div className="project-child">
+    <div className="project-child" key={el.name}>
       <div className="project exp-title">
         <h3>{el.name}</h3>
-        <a href={el.url} target="_blank" rel="noreferrer noopener">
-          Otwórz
-        </a>
+        <Link to={el.url}>Otwórz</Link>
       </div>
     </div>
   );

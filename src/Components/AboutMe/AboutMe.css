@@ -3,6 +3,7 @@
   flex-direction: column;
   border-radius: 8px;
   width: 100%;
+  max-width: 280px;
   gap: 20px;
 }
 .content {
@@ -39,6 +40,7 @@
 @media screen and (max-width: 667px) {
   .mainContent--left {
     width: 100%;
+    max-width: 100%;
     padding: 5px 0px 5px 0px;
     justify-content: center;
     align-items: center;
