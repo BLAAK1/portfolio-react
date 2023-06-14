@@ -1,5 +1,6 @@
 const dataJobs = [
   {
+    id: 0,
     from: "06.2023",
     to: "07.2023",
     name: "Praktykant (120 godzin)",
@@ -15,6 +16,7 @@ const dataJobs = [
     ),
   },
   {
+    id: 1,
     from: "05.2020",
     to: "06.2020",
     name: "Praktykant",
@@ -29,6 +31,7 @@ const dataJobs = [
     ),
   },
   {
+    id: 2,
     from: "10.2019",
     to: "11.2019",
     name: "Praktykant",
@@ -77,19 +80,21 @@ const dataCert = [
     when: "Wrzesień 2021",
     title: "EE.08",
     from: "OKE",
-    description: "Montaż i eskploatacja systemów komputerowych, urządzeń peryferyjnych i sieci",
+    description:
+      "Montaż i eskploatacja systemów komputerowych, urządzeń peryferyjnych i sieci",
   },
   {
     type: "Kwalifikacja",
     when: "Marzec 2022",
     title: "EE.09",
     from: "OKE",
-    description: "Programowanie, tworzenie i administrowanie stronami internetowymi i bazami danych",
+    description:
+      "Programowanie, tworzenie i administrowanie stronami internetowymi i bazami danych",
   },
 ];
 const outputJobs = dataJobs.map((el) => {
   return (
-    <div className="exp-child" key={el.name}>
+    <div className="exp-child" key={el.name + el.id}>
       <div className="when">
         <p>
           Od: {el.from} Do: {el.to}
@@ -126,7 +131,7 @@ const outputEdu = dataEdu.map((el) => {
 });
 const outputCert = dataCert.map((el) => {
   return (
-    <div className="exp-child">
+    <div className="exp-child" key={el.title}>
       <div className="cert">
         <div className="cert-child">
           <h3>
